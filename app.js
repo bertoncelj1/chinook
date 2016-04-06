@@ -192,3 +192,13 @@ app.get('/pages', function(request, response) {
 });
 
 
+app.listen(process.env.PORT, function() {
+  console.log('Server is on.');
+});
+
+
+app.get('/', function(request, response) {
+ response.redirect('/artists/1');
+}); 
+
+
