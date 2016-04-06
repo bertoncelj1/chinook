@@ -99,7 +99,6 @@ var genres = function(artist, callback) {
         if (rows.length == 0){
           result += 'No genres for this artist';
         } else {
-          result += rows.length;
           result += "<em>";
           for(var i=0; i<rows.length; i++){
             result += (i==0? "" : " | ") + rows[i].Name;
